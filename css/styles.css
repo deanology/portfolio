@@ -1,0 +1,352 @@
+body {
+  font-family: "Rubik", Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+ }
+ ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ h1, h2, h3, h4, h5, h6 {
+    font-family: "Heebo", sans-serif;
+    color: #222222;
+    line-height: 1.2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+}
+ a{
+    text-decoration: none;
+ }
+ a:hover{
+    text-decoration: none;
+ }
+ img{
+    width: 100%;
+    height: auto;
+ }
+ .text-right{
+    text-align: right;
+}
+ .relative{
+    position: relative;
+ }
+ .padding{
+    padding: 100px 0;
+    position: relative;
+ }
+ .underline{
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+ }
+ .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/*********================= Navbar ===========**************/
+ .navbar-brand{
+    color: #fff;
+ }
+.navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    padding: 12px 20px;
+    font-weight: 400px;
+    color: #fff;
+}
+.navbar-expand-lg{
+  background: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+/*********================= Banner Area ===========**************/
+.banner-area{
+    height: 100vh;
+    background: url('../images/banner-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.banner-area .overlay-bg{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.btn-outline-white{
+    border-width: 2px;
+    border-color: #fff;
+    color: #fff;
+}
+.btn-outline-white:hover{
+    border-width: 2px;
+    background: #fff;
+    color: #000;
+}
+.btn-outline-white:active, .btn-outline-white:focus{
+    box-shadow: none;
+}
+.banner-text, .blog-text{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.banner-area h1{
+    font-size: 40px;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+}
+.banner-area p{
+    font-size: 20px;
+    font-weight: 300 !important;
+}
+
+/*********================= Services ===========**************/
+.services h2, .portfolio h2, .blog h2, .review h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #26547c;
+}
+.services h2:before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #424242;
+    position: absolute;
+    left: 48%;
+    bottom: 55%;
+}
+.services p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #9baebf;
+    letter-spacing: .28px;
+}
+.services-1{
+    padding: 30px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+.services-1 figure img{
+    width: 130px;
+    border-radius: 50% !important;
+}
+.services-1 h3{
+    font-size: 20px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    color: #26547c;
+    letter-spacing: .40px;
+    padding: 8px 0 16px;
+}
+.services-1 p{
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+/*********================= Portfolio ===========**************/
+.portfolio{
+    background: #f6f7fa;
+}
+.portfolio h2:before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #424242;
+    position: absolute;
+    left: 48%;
+    bottom: 55%;
+}
+.card{
+    margin-bottom: 30px;
+}
+.card-body h5{
+    margin-bottom: 10px;
+}
+/*********================= Counter ===========**************/
+.single-counter{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.single-counter h1.counter-text{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+    color: #26547c;
+}
+.single-counter p{
+    color: #222;
+}
+
+/*********================= Blog ===========**************/
+.blog h2:before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #424242;
+    position: absolute;
+    left: 48%;
+    bottom: 55%;
+}
+.single-latest-blog{
+    margin-bottom: 30px;
+}
+
+.single-latest-blog:hover img{
+    transform: scale(1.1);
+}
+.single-latest-blog .tags{
+    margin: 20px 0;
+}
+.single-latest-blog .tags li{
+    display: inline-block;
+    border: 1px solid #eee;
+    padding: 4px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: ease 0.3s all;
+    margin-bottom: 8px;
+}
+.single-latest-blog h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #26547c;
+}
+.single-latest-blog .date{
+    color: #222;
+}
+
+/*********================= Review ===========**************/
+.review{
+   background-color: #f6f7fa;
+}
+.review h2:before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #424242;
+    position: absolute;
+    left: 48%;
+    bottom: 55%;
+}
+.review .single-review{
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.single-review img{
+    max-width: 60px;
+}
+.single-review h4{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.single-review p{
+    margin-top: 10px;
+}
+.single-review .rating .checked{
+    color: orange;
+}
+/*********================= Contact ===========**************/
+.contact{
+    background-color: #f6f7fa;
+}
+.contact h2:before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #424242;
+    position: absolute;
+    left: 48%;
+    bottom: 55%;
+}
+.form-control{
+    height: 55px;
+    background: #fff;
+}
+.form-group .btn{
+    background-color: #26547c;
+    border: 1px solid #26547c;
+}
+/*********================= Footer ===========**************/
+.footer{
+    background-color: #04091e;
+    padding-bottom: 20px;
+    color: #777777;
+}
+.footer h6{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-text{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.footer-social-icons a{
+    padding-right: 25px;
+    transition: all 0.3s ease 0s;
+}
+.footer-social-icons i{
+    color: black;
+}
+.footer .footer-links li{
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.blog-area{
+    background: url('../images/banner-img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height:50vh;
+}
+.blog-area .overlay-bg{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.single-post .feature-img img{
+    width: 100%;
+}
+.single-post .tags{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.single-post .tags li{
+    display: inline-block;
+    border: 1px solid #eee;
+    padding: 4px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: ease 0.3s all;
+}
+.single-post .tags li .lnr{
+    margin-right: 10px;
+}
+.comment-list .comment{
+    padding: 0;
+    margin: 0 0 30px 0;
+    float: left;
+    width: 100%;
+    clear: both;
+    list-style: none;
+}
+.comment-list .comment .vcard{
+    width: 80px;
+    float: left;
+}
+.comment-list .comment .vcard img{
+    width: 50px;
+    border-radius: 50%;
+}
