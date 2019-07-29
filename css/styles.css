@@ -448,12 +448,20 @@ body {
     margin: 0;
 }
 .single-latest-blog h4{
+.progress{
+    box-shadow: none;
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    border-radius: 0;
     margin-bottom: 10px;
     font-size: 18px;
     color: #26547c;
 }
 .single-latest-blog .date{
     color: #222;
+.progress-bar{
+    width: 89%;
 }
 
 /*********================= Review ===========**************/
@@ -474,19 +482,39 @@ body {
     background-color: #fff;
     padding: 30px;
     margin-bottom: 30px;
+.owl-carousel{
+  display: flex;
 }
 .single-review img{
     max-width: 60px;
+.review .client-slider .item p{
+    background: #f1e8e9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    position: relative;
 }
 .single-review h4{
     font-size: 18px;
     margin-top: 20px;
+.review .client-slider .item img{
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 .single-review p{
     margin-top: 10px;
+.review .client-slider .item h4{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 25px 0px 12px 0px;
 }
 .single-review .rating .checked{
     color: orange;
+.review .client-slider .item h5{
+  font-size: 14px;
+  padding-bottom: 18px;
 }
 /*********================= Contact ===========**************/
 .contact{
@@ -508,6 +536,11 @@ body {
 .form-group .btn{
     background-color: #26547c;
     border: 1px solid #26547c;
+    width: 140px;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+    box-shadow: none;
 }
 /*********================= Footer ===========**************/
 .footer{
