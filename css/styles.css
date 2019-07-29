@@ -168,14 +168,58 @@ body {
     color: #26547c;
     letter-spacing: .40px;
     padding: 8px 0 16px;
+
+.theme-title h2:before {
+  content: '';
+  width: 25px;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  background: #424242;
+  margin-left: -12px;
+}
+.theme-title p {
+  font-size: 14px;
 }
 .services-1 p{
     font-size: 14px;
     letter-spacing: 0.2px;
+.single-service-content{
+    margin-top: 40px;
 }
+.single-service-content .icon{
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    margin: 0 auto;
+    border: 2px solid #d73e4d;
+    font-size: 36px;
+    color: #292929;
+}
+.round-border{
+    border-radius: 50%;
+}
+.single-service-content h5{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 35px 0 20px 0;
+}
+.single-service-content h5 a{
+    color: #292929;
 
+}
+.single-service-content a.more{
+    width: 130px;
+    line-height: 45px;
+    color: #292929;
+    margin-top: 22px;
+    border: 1px solid #d73e4d;
+}
 /*********================= Portfolio ===========**************/
 .portfolio{
+.projects{
     background: #f6f7fa;
 }
 .portfolio h2:before{
@@ -183,12 +227,72 @@ body {
     width: 60px;
     height: 2px;
     background: #424242;
+.projects .project-menu{
+    text-align: center;
+}
+.project-menu{
+    margin-bottom: 50px;
+}
+.projects .grid-item{
+    padding: 0 15px 30px;
+}
+.project-menu ul li{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 8px;
+    font-weight: 700;
+    color: #292929;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: transparent;
+    margin: 15px 10px 0 10px;
+}
+.project-menu ul li.active{
+    border-color: #d73e4d;
+    border-style: solid;
+}
+.projects .project-gallery .single-image{
+    position: relative;
+    overflow: hidden;
+}
+.projects .project-gallery .single-image img{
+    max-width: 100%;
+}
+.projects .project-gallery .single-image:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(248, 184, 29, 0.7);
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 300ms linear 0s;
+}
+.projects .project-gallery .single-image .project-hover{
     position: absolute;
     left: 48%;
     bottom: 55%;
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+    right: 0;
+    text-align: center;
+    z-index: 2;
 }
 .card{
     margin-bottom: 30px;
+.projects .project-gallery .single-image .project-hover h4{
+    color: #fff;
+    font: 700 14px;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    position: relative;
+    right: -100%;
+    transition: all 300ms linear 0s;
 }
 .card-body h5{
     margin-bottom: 10px;
