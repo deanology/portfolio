@@ -1,7 +1,6 @@
 body {
   font-family: "Rubik", Arial, sans-serif;
   background: #fff;
-  font-size: 16px;
   font-size: 14px;
   line-height: 1.8;
   font-weight: 400;
@@ -100,8 +99,8 @@ body {
 }
 
 /*********================= Services ===========**************/
-.services h2, .portfolio h2, .blog h2, .review h2, .projects h2{
-    font-size: 40px;
+.services h2, .portfolio h2, .blog h2, .review h2, .projects h2, .contact h2{
+    font-size: 30px;
     font-weight: bold;
     color: #26547c;
 }
@@ -150,7 +149,7 @@ body {
     height: 130px;
     line-height: 130px;
     margin: 0 auto;
-    border: 2px solid #d73e4d;
+    border: 2px solid #26547c;
     font-size: 36px;
     color: #292929;
 }
@@ -172,7 +171,7 @@ body {
     line-height: 45px;
     color: #292929;
     margin-top: 22px;
-    border: 1px solid #d73e4d;
+    border: 1px solid #26547c;
 }
 /*********================= Portfolio ===========**************/
 .projects{
@@ -200,7 +199,7 @@ body {
     margin: 15px 10px 0 10px;
 }
 .project-menu ul li.active{
-    border-color: #d73e4d;
+    border-color: #26547c;
     border-style: solid;
 }
 .projects .project-gallery .single-image{
@@ -213,7 +212,7 @@ body {
 .projects .project-gallery .single-image:after {
   content: "";
   position: absolute;
-  background-color: rgba(248, 184, 29, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   display: block;
   top: 0;
   left: 0;
@@ -225,9 +224,8 @@ body {
 }
 .projects .project-gallery .single-image .project-hover{
     position: absolute;
-    left: 48%;
     bottom: 55%;
-    top: 45%;
+    top: 35%;
     left: 0;
     transform: translateY(-50%);
     right: 0;
@@ -236,10 +234,10 @@ body {
 }
 
 .projects .project-gallery .single-image .project-hover h4{
-    color: #fff;
+    color: #f9f9f9;
     font: 700 14px;
+    padding: 10px;
     text-transform: uppercase;
-    padding-bottom: 18px;
     position: relative;
     right: -100%;
     transition: all 300ms linear 0s;
@@ -247,10 +245,10 @@ body {
 .projects .project-gallery .single-image .project-hover a{
     font: 400 14px/60px;
     text-align: center;
-    border-radius: 10px;
-    background: #333333;
     border: none;
-    color: #fff;
+    border-radius: 0;
+    background: #fff;
+    color: #26547c;
     position: relative;
     left: -100%;
     transition: all 300ms linear 0s;
@@ -260,7 +258,7 @@ body {
 .projects .project-gallery .single-image .project-hover a:hover,
 .projects .project-gallery .single-image .project-hover a:focus{
   background: #fff;
-  color: #f6b60b;
+  color: #26547c;
 }
 .projects .project-gallery .single-image:hover:after,
 .projects .project-gallery .single-image:focus:after {
@@ -290,9 +288,6 @@ body {
 }
 
 /*********================= Blog ===========**************/
-.single-latest-blog{
-    margin: 20px 0 30px;
-}
 .blog .single-latest-blog{
     padding: 20px;
 }
@@ -319,6 +314,10 @@ body {
        -o-transform: scale(0.2);
           transform: scale(0.2);
 }
+.single-latest-blog .post h6{
+  font-size: 15px;
+  font-weight: 700;
+}
 .blog .single-latest-blog .post-image a i{
     position: relative;
     top:50%;
@@ -340,19 +339,12 @@ body {
   line-height: 26px;
   text-transform: none;
   color:#292929;
-  margin: 40px 0 15px 0;
 }
-
-/*.blog .single-latest-blog .post>a {
-  color: #292929;
-  font-size: 15px;
-  margin-bottom: 18px;
-}*/
 .blog .single-latest-blog .post p a {
   color: #292929;
 }
 .p-color{
-    color: blue;
+    color: #26547c;
 }
 /*********================= Progress bar ===========**************/
 .skill-background{
@@ -386,11 +378,12 @@ body {
     color: #fff;
     border-radius: 0;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 16px;
     color: #26547c;
 }
 .progress-bar{
     width: 89%;
+    background-color: #26547c;
 }
 
 /*********================= Review ===========**************/
@@ -431,8 +424,8 @@ body {
     background: #fff;
 }
 .form-group .btn{
-    background-color: #007bff;
-    border: 1px solid #007bff;
+    background-color: #26547c;
+    border: 1px solid #26547c;
     color: #fff;
     box-shadow: none;
 }
