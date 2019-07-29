@@ -129,6 +129,7 @@ body {
 
 /*********================= Services ===========**************/
 .services h2, .portfolio h2, .blog h2, .review h2{
+.services h2, .portfolio h2, .blog h2, .review h2, .projects h2{
     font-size: 40px;
     font-weight: bold;
     color: #26547c;
