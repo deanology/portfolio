@@ -12,6 +12,23 @@ body {
     padding: 0;
     list-style: none;
 }
+ h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
+ h1,h2,h3,h4,h5,h6 {color:#292929; text-transform: uppercase;font-weight: 700;}
+ h1 {font-size: 48px;}
+ h2 {font-size: 36px;}
+ h3 {font-size: 28px;}
+ h4 {font-size: 24px;}
+ h5 {font-size: 22px;}
+ h6 {font-size: 18px;}
+ p {line-height: 26px;}
+ ul {list-style-type: none;}
+ a {text-decoration: none; display: inline-block;}
+ a:hover,a:focus,a:visited {text-decoration: none; outline: none;}
+ img {max-width: 100%; display: block;}
+
+ button {border:none;outline: none;box-shadow: none;display: block; padding: 0;}
+ input,textarea {outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+ .form-control:hover,.form-control:focus,.form-control:visited{outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
  h1, h2, h3, h4, h5, h6 {
     font-family: "Heebo", sans-serif;
     color: #222222;
