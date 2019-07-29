@@ -158,6 +158,8 @@ body {
 .services-1 figure img{
     width: 130px;
     border-radius: 50% !important;
+.theme-title h2 {
+  position: relative;
 }
 .services-1 h3{
     font-size: 20px;
