@@ -7,11 +7,6 @@ body {
   font-weight: 400;
   color: #999999;
  }
- ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
  h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
  h1,h2,h3,h4,h5,h6 {color:#292929; text-transform: uppercase;font-weight: 700;}
  h1 {font-size: 48px;}
@@ -29,24 +24,6 @@ body {
  button {border:none;outline: none;box-shadow: none;display: block; padding: 0;}
  input,textarea {outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
  .form-control:hover,.form-control:focus,.form-control:visited{outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
- h1, h2, h3, h4, h5, h6 {
-    font-family: "Heebo", sans-serif;
-    color: #222222;
-    line-height: 1.2em !important;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 600;
-}
- a{
-    text-decoration: none;
- }
- a:hover{
-    text-decoration: none;
- }
- img{
-    width: 100%;
-    height: auto;
- }
  .text-right{
     text-align: right;
 }
@@ -56,11 +33,6 @@ body {
  .padding{
     padding: 100px 0;
     position: relative;
- }
- .underline{
-    width: 100%;
-    height: 2px;
-    background-color: blue;
  }
  .overlay {
     position: absolute;
@@ -95,7 +67,7 @@ body {
     background-size: cover;
 }
 .banner-area .overlay-bg{
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 .btn-outline-white{
     border-width: 2px;
@@ -118,17 +90,16 @@ body {
     box-sizing: border-box;
 }
 .banner-area h1{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 800 !important;
     text-transform: uppercase;
 }
 .banner-area p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300 !important;
 }
 
 /*********================= Services ===========**************/
-.services h2, .portfolio h2, .blog h2, .review h2{
 .services h2, .portfolio h2, .blog h2, .review h2, .projects h2{
     font-size: 40px;
     font-weight: bold;
@@ -155,20 +126,9 @@ body {
     border-radius: 4px;
     margin-bottom: 40px;
 }
-.services-1 figure img{
-    width: 130px;
-    border-radius: 50% !important;
 .theme-title h2 {
   position: relative;
 }
-.services-1 h3{
-    font-size: 20px;
-    font-family: "Heebo", sans-serif;
-    font-weight: bold;
-    color: #26547c;
-    letter-spacing: .40px;
-    padding: 8px 0 16px;
-
 .theme-title h2:before {
   content: '';
   width: 25px;
@@ -182,9 +142,6 @@ body {
 .theme-title p {
   font-size: 14px;
 }
-.services-1 p{
-    font-size: 14px;
-    letter-spacing: 0.2px;
 .single-service-content{
     margin-top: 40px;
 }
@@ -218,15 +175,9 @@ body {
     border: 1px solid #d73e4d;
 }
 /*********================= Portfolio ===========**************/
-.portfolio{
 .projects{
     background: #f6f7fa;
 }
-.portfolio h2:before{
-    content: "";
-    width: 60px;
-    height: 2px;
-    background: #424242;
 .projects .project-menu{
     text-align: center;
 }
@@ -283,8 +234,7 @@ body {
     text-align: center;
     z-index: 2;
 }
-.card{
-    margin-bottom: 30px;
+
 .projects .project-gallery .single-image .project-hover h4{
     color: #fff;
     font: 700 14px;
@@ -294,8 +244,6 @@ body {
     right: -100%;
     transition: all 300ms linear 0s;
 }
-.card-body h5{
-    margin-bottom: 10px;
 .projects .project-gallery .single-image .project-hover a{
     font: 400 14px/60px;
     text-align: center;
@@ -342,11 +290,6 @@ body {
 }
 
 /*********================= Blog ===========**************/
-.blog h2:before{
-    content: "";
-    width: 60px;
-    height: 2px;
-    background: #424242;
 .single-latest-blog{
     margin: 20px 0 30px;
 }
@@ -376,8 +319,6 @@ body {
        -o-transform: scale(0.2);
           transform: scale(0.2);
 }
-.single-latest-blog{
-    margin-bottom: 30px;
 .blog .single-latest-blog .post-image a i{
     position: relative;
     top:50%;
@@ -402,33 +343,24 @@ body {
   margin: 40px 0 15px 0;
 }
 
-.single-latest-blog:hover img{
-    transform: scale(1.1);
-.blog .single-latest-blog .post>a {
+/*.blog .single-latest-blog .post>a {
   color: #292929;
   font-size: 15px;
   margin-bottom: 18px;
-}
-.single-latest-blog .tags{
-    margin: 20px 0;
+}*/
 .blog .single-latest-blog .post p a {
   color: #292929;
 }
-.single-latest-blog .tags li{
-    display: inline-block;
-    border: 1px solid #eee;
-    padding: 4px 15px;
-    font-size: 12px;
 .p-color{
     color: blue;
 }
 /*********================= Progress bar ===========**************/
 .skill-background{
-    background: url('../images/pulse_mod3.jpg')no-repeat center center fixed;
+    background: url('../images/pulse_mod3.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 .skill-background .overlay-bg{
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.90);
 }
 .clear-fix{
     clear: both;
@@ -447,7 +379,6 @@ body {
     margin-bottom: 15px;
     margin: 0;
 }
-.single-latest-blog h4{
 .progress{
     box-shadow: none;
     height: 30px;
@@ -458,8 +389,6 @@ body {
     font-size: 18px;
     color: #26547c;
 }
-.single-latest-blog .date{
-    color: #222;
 .progress-bar{
     width: 89%;
 }
@@ -468,25 +397,9 @@ body {
 .review{
    background-color: #f6f7fa;
 }
-.review h2:before{
-    content: "";
-    width: 60px;
-    height: 2px;
-    background: #424242;
-    position: absolute;
-    left: 48%;
-    bottom: 55%;
-}
-.review .single-review{
-    text-align: center;
-    background-color: #fff;
-    padding: 30px;
-    margin-bottom: 30px;
 .owl-carousel{
   display: flex;
 }
-.single-review img{
-    max-width: 60px;
 .review .client-slider .item p{
     background: #f1e8e9;
     border-radius: 10px;
@@ -494,24 +407,17 @@ body {
     margin-bottom: 25px;
     position: relative;
 }
-.single-review h4{
-    font-size: 18px;
-    margin-top: 20px;
 .review .client-slider .item img{
   width: 125px;
   height: 125px;
   margin: 0 auto;
   border-radius: 50%;
 }
-.single-review p{
-    margin-top: 10px;
 .review .client-slider .item h4{
   font-size: 18px;
   font-weight: 400;
   padding: 25px 0px 12px 0px;
 }
-.single-review .rating .checked{
-    color: orange;
 .review .client-slider .item h5{
   font-size: 14px;
   padding-bottom: 18px;
@@ -520,23 +426,11 @@ body {
 .contact{
     background-color: #f6f7fa;
 }
-.contact h2:before{
-    content: "";
-    width: 60px;
-    height: 2px;
-    background: #424242;
-    position: absolute;
-    left: 48%;
-    bottom: 55%;
-}
 .form-control{
     height: 55px;
     background: #fff;
 }
 .form-group .btn{
-    background-color: #26547c;
-    border: 1px solid #26547c;
-    width: 140px;
     background-color: #007bff;
     border: 1px solid #007bff;
     color: #fff;
