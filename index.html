@@ -535,6 +535,11 @@
 						<a href="#"><h4>Leya App is Out</h4></a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 						<p class="date">22nd July, 2019</p>
+						<div class="post">
+							<h6><a href="blog-details.html" class="tran3s">Playback: Akufo-Addo speaks to business community</a></h6>
+							<a href="blog-details.html">Posted by <span class="p-color">admin</span>  at 04 Feb, 2017</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna sed accumsan... <a href="blog-details.html" class="tran3s">Read More</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -551,6 +556,10 @@
 		 			tempor.</p>
 				</div>
 			</div>
+			<div class="theme-title text-center mb-4">
+				<h2 class="mb-4">Contact</h2>
+				<p>If you like my work and have some cool projects to work on, or need my services, just send me direct message or contact me through the social sites listed below</p>
+			</div> <!-- /.theme-title -->
 			<div class="row justify-content-center">
 				<div class="col-lg-6 mb-5">
 					<form>
@@ -560,6 +569,7 @@
 							</div>
 							<div class="col-md-6">
 								<input type="text" name="" class="form-control" placeholder="First name">
+								<input type="text" name="" class="form-control" placeholder="Last name">
 							</div>
 						</div>
 						<div class="form-group row">
@@ -575,6 +585,7 @@
 						<div class="form-group row">
 							<div class="col-md-4 mx-auto">
 								<input type="submit" name="" class="btn btn-block btn-primary text-white" value="Send Message">
+								<button type="button" class="btn btn-outline-primary" style="width: 140px;">Get in Touch</button>
 							</div>
 						</div>
 					</form>
@@ -600,6 +611,7 @@
 							<li class="d-block">
 								<span class="d-block">Address:</span>
 								<span class="text-white">34 Street Name, City Name Here, United States</span>
+								<span class="text-white">1b, Olabanji Olajide Street, Lekki Phase 1.</span>
 							</li>
 							<li class="d-block">
 								<span class="d-block">Telephone:</span>
@@ -638,11 +650,13 @@
     <script src="script/magnific-popup.min.js"></script>
     <script src="script/ajaxchimp.js"></script>
     <script src="script/jquery-ui.js"></script>
+    <script src="script/jquery.counterup.min.js"></script>
     <script src="script/contact-form.js"></script>
     <script src="script/modernizr-2.8.3.min.js"></script>
     <script src="script/wow.min.js"></script>
     <script src="script/jquery.flexslider.js"></script>
     <script src="script/owl.carousel.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="script/main.js"></script>
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 
@@ -650,8 +664,21 @@
     <script>
 		var scroll = new SmoothScroll('a[href*="#"]');
 	</script>
+
+	<!--================ Wow Animation=================-->
 	<script type="text/javascript">
 		new WOW().init();
+	</script>
+
+	<!--================Counter Up=================-->
+	<script type="text/javascript">
+		jQuery(document).ready(function ( $ )){
+			$('.counter-text').counterUp({
+		    delay: 10,
+		    time: 1000
+		});
+	}
+		
 	</script>
 </body>
 </html>
