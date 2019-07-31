@@ -12,6 +12,7 @@
 	<!-- Plugin-CSS -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css" href="css/linearicons.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -323,19 +324,30 @@
 			</div> <!-- /.theme-title -->
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-8">
-					<div class="client-slider owl-carousel"> <!-- add class owl-carousel -->
-						<div class="item">
-							<p class="text-center">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and et demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue”</p>
-                            <img src="images/person_1.jpg" alt="Client Image">
-                            <h4 class="text-center">Prodip Ghosh</h4>
-                            <h5 class="text-center">CEO of themeXart</h5>
-						</div>
+					<div class="owl-carousel owl-theme client-slider">
+					    <div class="item">
+					    	<p class="text-center">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and et demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue”</p>
+					    	<img src="images/person_1.jpg" alt="Client Image">
+                            <h4 class="text-center">John Doe</h4>
+                            <h5 class="text-center">Designer</h5>
+					    </div>
+					    <div class="item">
+					    	<p class="text-center">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and et demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue”</p>
+					    	<img src="images/person_2.jpg" alt="Client Image">
+                            <h4 class="text-center">John Doe</h4>
+                            <h5 class="text-center">Developer</h5>
+					    </div>
+					    <div class="item">
+					    	<p class="text-center">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and et demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue”</p>
+					    	<img src="images/person_3.jpg" alt="Client Image">
+                            <h4 class="text-center">John Doe</h4>
+                            <h5 class="text-center">Graphics Developer</h5>
+					    </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
 	<!--================ Blog =================-->
 		<section class="blog padding" id="blog">
 		<div class="container">
@@ -519,7 +531,26 @@
 		    time: 1000
 		});
 	}
-		
+	</script>
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    nav:false,
+		    pagination:false,
+		    autoplay: 1000,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    }
+		})
 	</script>
 </body>
 </html>

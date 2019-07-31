@@ -19,7 +19,7 @@ body {
  a {text-decoration: none; display: inline-block;}
  a:hover,a:focus,a:visited {text-decoration: none; outline: none;}
  img {max-width: 100%; display: block;}
-
+  button:focus, button:hover{outline: none;}
  button {border:none;outline: none;box-shadow: none;display: block; padding: 0;}
  input,textarea {outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
  .form-control:hover,.form-control:focus,.form-control:visited{outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
@@ -383,9 +383,6 @@ body {
 .review{
    background-color: #f6f7fa;
 }
-.owl-carousel{
-  display: flex;
-}
 .review .client-slider .item p{
     background: #f1e8e9;
     border-radius: 10px;
@@ -407,6 +404,24 @@ body {
 .review .client-slider .item h5{
   font-size: 14px;
   padding-bottom: 18px;
+}
+.owl-theme .owl-dots .owl-dot span{
+  height: 6px;
+  width: 6px;
+  background: #b2b2b2;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  display: none;
+  visibility: hidden;
+}
+.owl-theme .owl-nav{
+  margin: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #26547c;
 }
 /*********================= Contact ===========**************/
 .contact{
