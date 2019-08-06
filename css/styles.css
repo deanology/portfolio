@@ -19,12 +19,17 @@ body {
  a {text-decoration: none; display: inline-block;}
  a:hover,a:focus,a:visited {text-decoration: none; outline: none;}
  img {max-width: 100%; display: block;}
-  button:focus, button:hover{outline: none;}
+ button:focus, button:hover, button:visited{outline: none; box-shadow: none;}
+ .btn-outline-primary:active, .btn-outline-primary:focus{ box-shadow: none;}
  button {border:none;outline: none;box-shadow: none;display: block; padding: 0;}
  input,textarea {outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
  .form-control:hover,.form-control:focus,.form-control:visited{outline: none; box-shadow: none;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
  .text-right{
     text-align: right;
+}
+.no-gutters{
+  margin-right: 0;
+  margin-left: 0;
 }
  .relative{
     position: relative;
@@ -58,8 +63,20 @@ body {
   color: #26547c;
 }
 .navbar-toggler{
-  border-color: #fff;
-  padding: 4px 10px;
+  padding: 0.25rem 0.72rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.navbar-expand-lg .navbar-toggler{
+  border: none;
+  color: rgba(255, 255, 255, 1) !important;
+  padding-right: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: .1em;
 }
 /*.navbar-toggler .navbar-toggler-icon{
   color: #fff;
@@ -160,6 +177,8 @@ body {
 }
 .theme-title p {
   font-size: 14px;
+  display: block;
+  font-weight: 300;
 }
 .single-service-content{
     margin-top: 40px;
@@ -204,7 +223,7 @@ body {
   margin: 0 10px 10px;
 }
 .project-menu .btn{
-  font-size: 14px;
+  font-size: 12px;
 }
 .project-menu .btn:active{
   background-color: #007bff;
@@ -242,75 +261,49 @@ body {
     border-style: solid;
 }*/
 .projects .project-gallery .single-image{
+    margin-bottom: 0;
     position: relative;
+    z-index: 0;
     overflow: hidden;
 }
-.projects .project-gallery .single-image img{
-    max-width: 100%;
-}
-.projects .project-gallery .single-image:after {
-  content: "";
+.single-image .text{
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: block;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  background: rgba(0,0,0,0.8);
+  z-index: 0;
+  content: '';
   opacity: 0;
-  transition: all 300ms linear 0s;
+  transition: all 0.2s ease;
+  color: rgba(255,255,255, 0.8);
 }
-.projects .project-gallery .single-image .project-hover{
-    position: absolute;
-    bottom: 55%;
-    top: 35%;
-    left: 0;
-    transform: translateY(-50%);
-    right: 0;
-    text-align: center;
-    z-index: 2;
+.single-image .text h3{
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
 }
-
-.projects .project-gallery .single-image .project-hover h4{
-    color: #f9f9f9;
-    font: 700 14px;
-    padding: 10px;
-    text-transform: uppercase;
-    position: relative;
-    right: -100%;
-    transition: all 300ms linear 0s;
-}
-.projects .project-gallery .single-image .project-hover a{
-    font: 400 14px/60px;
-    text-align: center;
-    border: none;
-    border-radius: 0;
-    background: #fff;
-    color: #26547c;
-    position: relative;
-    left: -100%;
-    transition: all 300ms linear 0s;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-.projects .project-gallery .single-image .project-hover a:hover,
-.projects .project-gallery .single-image .project-hover a:focus{
-  background: #fff;
-  color: #26547c;
-}
-.projects .project-gallery .single-image:hover:after,
-.projects .project-gallery .single-image:focus:after {
+.single-image:hover .text, .single-image:focus .text{
   opacity: 1;
+  cursor: pointer;
 }
-.projects .project-gallery .single-image:hover .project-hover h4,
-.projects .project-gallery .single-image:focus .project-hover h4 {
-  right: 0;
-}
-.projects .project-gallery .single-image:hover .project-hover a,
-.projects .project-gallery .single-image:focus .project-hover a {
+/*.single-image:after{
+  position: absolute;
+  top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d291bc;
+  z-index: 0;
+  content: '';
+  transition: all 0.2s ease;
 }
+.package-program:hover:after, .package-program:focus:after {
+    opacity: .5; }
+*/
+
 /*********================= Counter ===========**************/
 .single-counter{
     text-align: center;
@@ -425,6 +418,7 @@ body {
 .review .client-slider .item p{
     background: #f1e8e9;
     border-radius: 10px;
+    color: #26547c;
     padding: 15px;
     margin-bottom: 25px;
     position: relative;

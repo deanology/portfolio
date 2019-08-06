@@ -1,25 +1,76 @@
-/*
-@media (max-width: 320px){ ... }
 
-@media (max-width: 480px){ ... }
-
-@media (min-width: 576px) and (max-width: 767px){ ... }
-
-@media (min-width: 768px) and (max-width: 991px){ ... }
-
-@media (min-width: 992px) and (max-width: 1199px){ 
-    .navbar{
-        background: rgba(0,0,0,.7);
-    }
- }*/
-/*
-@media only screen and (min-width: 992px){
-    .navbar{
-        background: rgba(0,0,0,.7);
-    }
-}*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .mainmenu-area{
         background-color: #000;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .padding{
+        padding: 80px 0;
+    }
+    .services h2, .portfolio h2, .blog h2, .review h2, .projects h2, .contact h2{
+        font-size: 26px;
+    }
+    .banner-area h1{
+        font-size: 32px;
+    }
+    .single-counter h1.counter-text{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .banner-area h1{
+        font-size: 30px;
+    }
+    .padding{
+        padding: 80px 0;
+    }
+    .services h2, .portfolio h2, .blog h2, .review h2, .projects h2, .contact h2{
+        font-size: 26px;
+    }
+    .single-counter h1.counter-text{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .banner-area h1{
+        font-size: 30px;
+    }
+    .padding{
+        padding: 80px 0;
+    }
+    .services h2, .portfolio h2, .blog h2, .review h2, .projects h2, .contact h2{
+        font-size: 26px;
+    }
+    .single-counter h1.counter-text{
+        font-size: 30px;
+    }
+}
+
+
+/*@media (min-width: 992px){
+     .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}*/
+@media (max-width: 991.98px){
+    .mainmenu-area {
+        background: #000;
+        position: relative;
+        top: 0;
+        padding: 10px 15px;
+    }
+    .navbar{
+        padding-bottom: 10px;
+    }
+    .navbar .navbar-nav{
+        margin-right: auto !important;
+    }
+    .navbar-nav > .nav-item > .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color: rgba(255, 255, 255, 0.7);
     }
 }

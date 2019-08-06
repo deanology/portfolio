@@ -19,42 +19,45 @@
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<!-- Main-Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 </head>
 <body>
 	<!--================Header Area =================-->
 	<nav class="navbar navbar-expand-lg mainmenu-area fixed-top">
-	  <a class="navbar-brand" href="#">Portfolio</a>
-	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainmenu">
-	  	<span class="navbar-toggler-icon"></span>
-	  </button>
+	  <div class="container">
+	  		  <a class="navbar-brand" href="#">Portfolio</a>
+			  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+			  	<span class="lnr lnr-menu"></span>
+			  	Menu
+			  </button>
 
-	  <div class="collapse navbar-collapse" id="mainmenu">
-	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#home">About</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#services">Services</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#portfolio">Portfolio</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#skills">Skills</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#blog">Blog</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#contact">Contact</a>
-	      </li>
-	    </ul>
+			  <div class="collapse navbar-collapse" id="mainmenu">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#home">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#services">Services</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#portfolio">Portfolio</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#skills">Skills</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#blog">Blog</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#contact">Contact</a>
+			      </li>
+			    </ul>
+			  </div>
 	  </div>
 	</nav>
 	<!--================End Header Area =================-->
@@ -97,7 +100,7 @@
 						<div class="icon round-border tran3s">
 							<i class="fas fa-paint-brush"></i>
 						</div>
-						<h5><a href="#" class="tran3s">Web Development</a></h5>
+						<h5><a href="#" class="tran3s">Web Application</a></h5>
 						<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 						<a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
 					</div>
@@ -107,7 +110,7 @@
 						<div class="icon round-border tran3s">
 							<i class="fas fa-anchor"></i>
 						</div>
-						<h5><a href="#" class="tran3s">Web Development</a></h5>
+						<h5><a href="#" class="tran3s">React Application</a></h5>
 						<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 						<a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
 					</div>
@@ -117,7 +120,7 @@
 						<div class="icon round-border tran3s">
 							<i class="far fa-life-ring"></i>
 						</div>
-						<h5><a href="#" class="tran3s">Web Development</a></h5>
+						<h5><a href="#" class="tran3s">Website Debugging</a></h5>
 						<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 						<a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
 					</div>
@@ -130,7 +133,7 @@
 	<!--================Portfolio =================-->
 	<section class="projects padding" id="portfolio">
 		<div class="container">
-			<div class="theme-title text-center mb-4">
+			<div class="theme-title text-center mb-4 wow fadeInUp">
 				<h2 class="mb-4">My Awesome Projects</h2>
 				<p>Below are some of the projects i have been worked on and some i have been working on lately</p>
 			</div> <!-- /.theme-title -->
@@ -143,58 +146,64 @@
 				<button type="button" class="btn btn-outline-primary filter-button" data-filter="seo">SEO</button>
 			</div>
 			<div class="project-gallery">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter web">
-						<div class="single-image">
-							<img src="images/loan.jpg" class="img-fluid" alt="Blog Image">
-							<div class="project-hover">
-								<h4>Loanee</h4>
-								<a href="#" class="btn btn-outline-primary">View on Git</a>
+				<div class="row no-gutters">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 filter web">
+						<div class="single-image wow fadeInUp">
+							<img src="images/loan.jpg" class="img-fluid justify-content-center align-items-center" alt="Portfolio Image">
+							<div class="text p-5 text-center">
+								<h3>Website Name</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm">View on Git</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter word">
-						<div class="single-image">
-							<img src="images/loanee.jpg" class="img-fluid" alt="Blog Image">
-							<div class="project-hover">
-								<h4>Loanee</h4>
-								<a href="#" class="btn btn-outline-primary">View on Git</a>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 filter word">
+						<div class="single-image wow fadeInUp">
+							<img src="images/spotBlog.jpg" class="img-fluid justify-content-center align-items-center" alt="Portfolio Image">
+							<div class="text p-5 text-center">
+								<h3>Website Name</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm">View on Git</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter web">
-						<div class="single-image">
-							<img src="images/mobile.jpg" class="img-fluid" alt="Blog Image">
-							<div class="project-hover">
-								<h4>Loanee</h4>
-								<a href="#" class="btn btn-outline-primary">View on Git</a>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 filter web">
+						<div class="single-image wow fadeInUp">
+							<img src="images/loanee.jpg" class="img-fluid justify-content-center align-items-center" alt="Portfolio Image">
+							<div class="text p-5 text-center">
+								<h3>Website Name</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm">View on Git</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter react">
-						<div class="single-image">
-							<img src="images/spotBlog.jpg" class="img-fluid" alt="Blog Image">
-							<div class="project-hover">
-								<h4>Loanee</h4>
-								<a href="#" class="btn btn-outline-primary">View on Git</a>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 filter react">
+						<div class="single-image wow fadeInUp">
+							<img src="images/spotBlog.jpg" class="img-fluid justify-content-center align-items-center" alt="Portfolio Image">
+							<div class="text p-5 text-center">
+								<h3>Website Name</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm">View on Git</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter illustrator">
-						<div class="single-image">
-							<img src="images/loanee.jpg" class="img-fluid" alt="Blog Image">
-							<div class="project-hover">
-								<h4>Loanee</h4>
-								<a href="#" class="btn btn-outline-primary">View on Git</a>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 filter illustrator">
+						<div class="single-image wow fadeInUp">
+							<img src="images/loanee.jpg" class="img-fluid justify-content-center align-items-center" alt="Portfolio Image">
+							<div class="text p-5 text-center">
+								<h3>Website Name</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm">View on Git</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter seo">
-						<div class="single-image">
-							<img src="images/mobile.jpg" class="img-fluid" alt="Blog Image">
-							<div class="project-hover">
-								<h4>Loanee</h4>
-								<a href="#" class="btn btn-outline-primary">View on Git</a>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 filter seo">
+						<div class="single-image wow fadeInUp">
+							<img src="images/mobile.jpg" class="img-fluid justify-content-center align-items-center" alt="Portfolio Image">
+							<div class="text p-5 text-center">
+								<h3>Website Name</h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<a href="#" class="btn btn-outline-primary btn-sm">View on Git</a>
 							</div>
 						</div>
 					</div>
