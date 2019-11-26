@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: "Rubik", Arial, sans-serif;
   background: #fff;
   font-size: 14px;
@@ -44,9 +44,9 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-}
+} */
 /*********================= Navbar ===========**************/
-.navbar-brand{
+/* .navbar-brand{
     color: #fff;
  }
  .navbar-nav .nav-item .nav-link{
@@ -77,7 +77,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: .1em;
-}
+} */
 /*.navbar-toggler .navbar-toggler-icon{
   color: #fff;
   width: 22px;
@@ -86,11 +86,11 @@ body {
 .navbar-collapse{
   max-height: none;
 }*/
-.navbar-top{
+/* .navbar-top{
   background-color: rgba(0,0,0,1);
-}
+} */
 /*********================= Banner Area ===========**************/
-.banner-area{
+/* .banner-area{
     height: 100vh;
     background: url('../images/banner-img.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -133,7 +133,7 @@ body {
     font-weight: 300 !important;
     animation-delay: .1s;
     animation-duration: .5s;
-}
+} */
 
 /*********================= Services ===========**************/
 .services h2, .portfolio h2, .blog h2, .review h2, .projects h2, .contact h2{

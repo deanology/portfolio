@@ -1,558 +1,465 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="author" content="Idam Okechukwu">
     <meta name="description" content="">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-	<title>Idam Okechukwu Samuel | Portfolio</title>
-	<!-- Plugin-CSS -->
-	<link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" type="text/css" href="css/linearicons.css">
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="css/all.min.css">
-	<!-- Main-Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <title>Idam Okechukwu Samuel | Portfolio</title>
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 </head>
+
 <body>
-	<!--================Header Area =================-->
-	<nav class="navbar navbar-expand-lg mainmenu-area fixed-top">
-	  <div class="container">
-	  		  <a class="navbar-brand" href="#">Portfolio</a>
-			  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false" aria-label="Toggle navigation">
-			  	<span class="lnr lnr-menu"></span>
-			  	Menu
-			  </button>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top mainnav">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-2 px-0 px-lg-3 text-white" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-2 px-0 px-lg-3 text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-2 px-0 px-lg-3 text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="portfolio-header bg-primary text-white text-center padding">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- portfolio photograph -->
+            <img class="photograph" src="images/avataaars.svg" alt="">
+            <!-- Masthead Heading -->
+            <h1 class="fullname text-uppercase mb-0 mt-3">Idam Okechukwu Samuel</h1>
+            <!-- Icon Divider -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- portfolio subheading -->
+            <p class="portfolio-subheading mb-0">Web Designer - Web Developer - Wordpress Developer</p>
+        </div>
+    </header>
+    <section class="portfolio padding page-section" id="portfolio">
+        <div class="container">
+            <!-- portfolio section heading -->
+            <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Divider -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- portfolio grid item -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h3>Restaurant</h3>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#restaurant">
+								  More Details
+								</button>
+                                <!-- <a class="btn btn-secondary" href="https://deanrestaurant.netlify.com/">View Online</a> -->
+                            </div>
+                        </div>
+                        <img src="images/cabin.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item mx-auto">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h3>Wtour</h3>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wtour">
+								  More Details
+								</button>
+                                <!-- <a class="btn btn-secondary" href="https://deantourism.netlify.com/">View Online</a> -->
+                            </div>
+                        </div>
+                        <img src="images/cake.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#lyrics">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h3>Lyrics</h3>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lyrics">
+								  More Details
+								</button>
+                            </div>
+                        </div>
+                        <img src="images/image.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfoliomodal4">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h3>HospitalRun</h3>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hospital">
+								  More Details
+								</button>
+                            </div>
+                        </div>
+                        <img src="images/game.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfoliomodal5">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/safe.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfoliomodal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/submarine.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about padding bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading -->
+            <h2 class="text-center text-uppercase text-secondary mb-0 about-me">About Me</h2>
+            <!-- Icon Divider -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content -->
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact padding" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading -->
+            <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0">
+                                <label>Name</label>
+                                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger d-none"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0">
+                                <label>Email Address</label>
+                                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger d-none"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0">
+                                <label>Phone Number</label>
+                                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger d-none"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0">
+                                <label>Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger d-none"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">1B, Olabanji Olajide Street
+                        <br>Lekki Phase1</p>
+                </div>
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Social Media Platforms</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/idam.okechukwu">
+                        <i class="fab fa-fw fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/idam_okechukwu">
+                        <i class="fab fa-fw fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/samuel-idam-724039140/">
+                        <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/okechukwuidam/?hl=en">
+                        <i class="fab fa-fw fa-instagram"></i>
+                    </a>
+                </div>
+                <!-- Footer About Text -->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About MyPortfolio</h4>
+                    <p class="lead mb-0">MyPortfolio is a product of Idam Okechukwu Samuel
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- copyright section -->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Copyright &copy; myPortfolio</small>
+        </div>
+    </section>
+    <!-- Modal 1 Restaurant-->
+    <div class="modal fade" id="restaurant" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+		        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-10">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">Restaurant</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <img src="images/cabin.png" alt="" class="img-fluid">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mt-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a class="btn btn-secondary" href="https://deanrestaurant.netlify.com/">View Online</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 Tourism-->
+    <div class="modal fade" id="wtour" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+		        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-10">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">Wtour</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <img src="images/cake.png" alt="" class="img-fluid">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mt-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a class="btn btn-secondary" href="https://deantourism.netlify.com/">View Online</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 3 Lyrics-->
+    <div class="modal fade" id="lyrics" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+		        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-10">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">Lyrics</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <img src="images/image.png" alt="" class="img-fluid">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mt-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a class="btn btn-secondary" href="#https://deantourism.netlify.com/">View Online</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 4 Hospital Management System-->
+    <div class="modal fade" id="hospital" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+		        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-10">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0 text-center">Hospital Mamgement System</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <img src="images/game.png" alt="" class="img-fluid">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mt-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                    itaque. Nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a class="btn btn-secondary" href="#https://deantourism.netlify.com/">View Online</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================ Jquery=================-->
+    <script src="script/jquery-3.4.1.min.js"></script>
 
-			  <div class="collapse navbar-collapse" id="mainmenu">
-			    <ul class="navbar-nav ml-auto">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#home">About</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#services">Services</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#portfolio">Portfolio</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#skills">Skills</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#blog">Blog</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="#contact">Contact</a>
-			      </li>
-			    </ul>
-			  </div>
-	  </div>
-	</nav>
-	<!--================End Header Area =================-->
-
-	<!--================Banner Area =================-->
-	<section class="banner-area relative" id="home">
-		<div class="overlay overlay-bg"></div>
-		 <div class="container">
-		 	<div class="row align-items-center justify-content-center banner-text">
-		 		<div class="col-md-12 col-sm-12 text-center">
-		 			<h1 class="text-white mb-4 wow zoomIn">Idam Okechukwu Samuel</h1>
-		 			<p class="mb-5 text-white wow zoomIn">A web designer and front end developer focus on crafting clean and user friendly experience with 2 years experience</p>
-		 			<a href="#" class="btn btn-outline-white wow zoomIn">Check my Work</a>
-		 		</div>
-		 	</div>
-		 </div>
-	</section>
-	<!--================End Banner Area =================-->
-
-	<!--================Services =================-->
-	<section class="services padding" id="services">
-		<div class="container">
-			<div class="theme-title text-center mb-4">
-				<h2 class="mb-4">Services</h2>
-				<p>Below are some of the projects i have been worked on and some i have been working on lately</p>
-			</div> <!-- /.theme-title -->
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<div class="single-service-content text-center">
-						<div class="icon round-border tran3s">
-							<i class="far fa-edit"></i>
-						</div>
-						<h5><a href="#" class="tran3s">Web Development</a></h5>
-						<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-						<a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<div class="single-service-content text-center">
-						<div class="icon round-border tran3s">
-							<i class="fas fa-paint-brush"></i>
-						</div>
-						<h5><a href="#" class="tran3s">Web Application</a></h5>
-						<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-						<a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<div class="single-service-content text-center">
-						<div class="icon round-border tran3s">
-							<i class="fas fa-anchor"></i>
-						</div>
-						<h5><a href="#" class="tran3s">React Application</a></h5>
-						<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-						<a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-					<div class="single-service-content text-center">
-						<div class="icon round-border tran3s">
-							<i class="far fa-life-ring"></i>
-						</div>
-						<h5><a href="#" class="tran3s">Website Debugging</a></h5>
-						<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-						<a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Services Area =================-->
-
-	<!--================Portfolio =================-->
-	<section class="projects padding" id="portfolio">
-		<div class="container">
-			<div class="theme-title text-center mb-4 wow fadeInUp">
-				<h2 class="mb-4">My Awesome Projects</h2>
-				<p>Below are some of the projects i have been worked on and some i have been working on lately</p>
-			</div> <!-- /.theme-title -->
-			<div class="project-menu text-center">
-				<button type="button" class="btn btn-outline-primary filter-button active" data-filter="all">ALL</button>
-				<button type="button" class="btn btn-outline-primary filter-button" data-filter="web">Web Design</button>
-				<button type="button" class="btn btn-outline-primary filter-button" data-filter="word">Wordpress</button>
-				<button type="button" class="btn btn-outline-primary filter-button" data-filter="react">React JS</button>
-				<button type="button" class="btn btn-outline-primary filter-button" data-filter="illustrator">Illustrator</button>
-				<button type="button" class="btn btn-outline-primary filter-button" data-filter="seo">SEO</button>
-			</div>
-			<div class="row mb-5">
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="single-image d-block">
-						<img src="images/mobile.jpg" alt="Image" class="img-fluid">
-						<div class="single-image-content text-center">
-							<h3>Restaurant</h3>
-							<a href="#">View Online</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="single-image d-block">
-						<img src="images/loan.jpg" alt="Image" class="img-fluid">
-						<div class="single-image-content text-center">
-							<h3>Tourism</h3>
-							<a href="#">View Online</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="single-image d-block">
-						<img src="images/loanee.jpg" alt="Image" class="img-fluid">
-						<div class="single-image-content text-center">
-							<h3>Restaurant</h3>
-							<a href="#">View Online</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="single-image d-block">
-						<img src="images/mobile.jpg" alt="Image" class="img-fluid">
-						<div class="single-image-content text-center">
-							<h3>Restaurant</h3>
-								<a href="#">View Online</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="single-image d-block">
-						<img src="images/loanee.jpg" alt="Image" class="img-fluid">
-						<div class="single-image-content text-center">
-							<h3>Restaurant</h3>
-							<a href="#">View Online</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mb-4">
-					<div class="single-image d-block">
-						<img src="images/loan.jpg" alt="Image" class="img-fluid">
-						<div class="single-image-content text-center">
-							<h3>Restaurant</h3>
-							<a href="#">View Online</a>
-						</div>
-					</div>
-				</div>
-			</div>
-				
-		</div>
-	</section>
-	<section class="skill-background padding" id="skills">
-		<div class="overlay overlay-bg"></div>
-		<div class="container">
-			<div class="clear-fix">
-				<div class="row justify-content-center">
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="progress-skills-single">
-									<div class="progress-skills-text">
-										<span class="skillArea">HTML</span>
-									</div>
-									<div class="progress">
-										 <div class="progress-bar" role="progressbar" aria-valuenow="89%" aria-valuemin="89" aria-valuemax="100">89%</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="progress-skills-single">
-									<div class="progress-skills-text">
-										<span class="skillArea">CSS</span>
-									</div>
-									<div class="progress">
-										 <div class="progress-bar" role="progressbar" aria-valuenow="80%" aria-valuemin="80" aria-valuemax="100">80%</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="progress-skills-single">
-									<div class="progress-skills-text">
-										<span class="skillArea">JavaScript</span>
-									</div>
-									<div class="progress">
-										 <div class="progress-bar" role="progressbar" aria-valuenow="25%" aria-valuemin="25" aria-valuemax="100">25%</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="progress-skills-single">
-									<div class="progress-skills-text">
-										<span class="skillArea">React</span>
-									</div>
-									<div class="progress">
-										 <div class="progress-bar" role="progressbar" aria-valuenow="50%" aria-valuemin="50" aria-valuemax="100">50%</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="progress-skills-single">
-									<div class="progress-skills-text">
-										<span class="skillArea">Illustrator</span>
-									</div>
-									<div class="progress">
-										 <div class="progress-bar" role="progressbar" aria-valuenow="75%" aria-valuemin="75" aria-valuemax="100">75%</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="progress-skills-single">
-									<div class="progress-skills-text">
-										<span class="skillArea">Bootstrap</span>
-									</div>
-									<div class="progress">
-										 <div class="progress-bar" role="progressbar" aria-valuenow="80%" aria-valuemin="80" aria-valuemax="100">80%</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="progress-skills-single">
-									<div class="progress-skills-text">
-										<span class="skillArea">Wordpress</span>
-									</div>
-									<div class="progress">
-										 <div class="progress-bar" role="progressbar" aria-valuenow="80%" aria-valuemin="80" aria-valuemax="100">80%</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--================Counter=================-->
-	<section class="padding" id="section">
-		<div class="container">
-			<div class="row text-center wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-				<div class="col-md-3 single-counter">
-					<h1 class="counter-text"><span class="counter"> 150 </span><span>+</span></h1>
-					<p>Bootstrap Projects</p>
-				</div>
-				<div class="col-md-3 single-counter">
-					<h1 class="counter-text"><span class="counter"> 10 </span><span>+</span></h1>
-					<p>Wordpress Projects</p>
-				</div>
-				<div class="col-md-3 single-counter">
-					<h1 class="counter-text"><span class="counter"> 5 </span><span>+</span></h1>
-					<p>React Projects</p>
-				</div>
-				<div class="col-md-3 single-counter">
-					<h1 class="counter-text"><span class="counter"> 100 </span><span>+</span></h1>
-					<p>Javascript Projects</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!--================Client Review =================-->
-	<section class="review padding" id="review">
-		<div class="container">
-			<div class="theme-title text-center mb-4">
-				<h2 class="mb-4">Clients Feedback</h2>
-				<p>Below are some of my client's testimony</p>
-			</div> <!-- /.theme-title -->
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-8">
-					<div class="owl-carousel owl-theme client-slider">
-					    <div class="item">
-					    	<p class="text-center">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and et demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue”</p>
-					    	<img src="images/person_1.jpg" alt="Client Image">
-                            <h4 class="text-center">John Doe</h4>
-                            <h5 class="text-center">Designer</h5>
-					    </div>
-					    <div class="item">
-					    	<p class="text-center">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and et demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue”</p>
-					    	<img src="images/person_2.jpg" alt="Client Image">
-                            <h4 class="text-center">John Doe</h4>
-                            <h5 class="text-center">Developer</h5>
-					    </div>
-					    <div class="item">
-					    	<p class="text-center">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and et demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue”</p>
-					    	<img src="images/person_3.jpg" alt="Client Image">
-                            <h4 class="text-center">John Doe</h4>
-                            <h5 class="text-center">Graphics Developer</h5>
-					    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ Blog =================-->
-		<section class="blog padding" id="blog">
-		<div class="container">
-			<div class="theme-title text-center mb-4">
-				<h2 class="mb-4">Blog</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div> <!-- /.theme-title -->
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="single-latest-blog">
-						<figure class="post-image">
-							<img src="images/cause-1.jpg" class="img-fluid" alt="Blog Image">
-							<div class="blog-hover">
-								<a href="#"><i class="lnr lnr-link"></i></a>
-							</div>
-						</figure>
-						<div class="post">
-							<h6><a href="blog-details.html" class="tran3s">Playback: Akufo-Addo speaks to business community</a></h6>
-							<a href="blog-details.html">Posted by <span class="p-color">admin</span>  at 04 Feb, 2017</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna sed accumsan... <a href="blog-details.html" class="tran3s">Read More</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="single-latest-blog">
-						<figure class="post-image">
-							<img src="images/cause-1.jpg" class="img-fluid" alt="Blog Image">
-							<div class="blog-hover">
-								<a href="#"><i class="lnr lnr-link"></i></a>
-							</div>
-						</figure>
-						<div class="post">
-							<h6><a href="blog-details.html" class="tran3s">Playback: Akufo-Addo speaks to business community</a></h6>
-							<a href="blog-details.html">Posted by <span class="p-color">admin</span>  at 04 Feb, 2017</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna sed accumsan... <a href="blog-details.html" class="tran3s">Read More</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<div class="single-latest-blog">
-						<figure class="post-image">
-							<img src="images/cause-1.jpg" class="img-fluid" alt="Blog Image">
-							<div class="blog-hover">
-								<a href="#"><i class="lnr lnr-link"></i></a>
-							</div>
-						</figure>
-						<div class="post">
-							<h6><a href="blog-details.html" class="tran3s">Playback: Akufo-Addo speaks to business community</a></h6>
-							<a href="blog-details.html">Posted by <span class="p-color">admin</span>  at 04 Feb, 2017</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis iaculis velit in tristique. Curabitur ac urna urna sed accumsan... <a href="blog-details.html" class="tran3s">Read More</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--================ contact form =================-->
-	<section class="contact padding" id="contact">
-		<div class="container">
-			<div class="theme-title text-center mb-4">
-				<h2 class="mb-4">Contact</h2>
-				<p>If you like my work and have some cool projects to work on, or need my services, just send me direct message or contact me through the social sites listed below</p>
-			</div> <!-- /.theme-title -->
-			<div class="row justify-content-center">
-				<div class="col-lg-6 mb-5">
-					<form>
-						<div class="form-group row">
-							<div class="col-md-6 mb-4 mb-lg-0">
-								<input type="text" name="" class="form-control" placeholder="First name">
-							</div>
-							<div class="col-md-6">
-								<input type="text" name="" class="form-control" placeholder="Last name">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-12">
-								<input type="email" name="" class="form-control" placeholder="Email address">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-12">
-								<textarea name="" id="" class="form-control" placeholder="Message" cols="30" rows="10"></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-4 mx-auto">
-								<input type="submit" value="Contact Me" class="btn btn-primary py-3 px-5">
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--================ Footer =================-->
-	<footer class="footer padding" id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
-					<div class="single-footer">
-						<h6>About</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="single-footer">
-						<h6>Contact Info</h6>
-						<ul class="footer-links">
-							<li>
-								<span>Address:</span>
-								<span class="text-white">1b, Olabanji Olajide Street, Lekki Phase 1.</span>
-							</li>
-							<li>
-								<span>Telephone:</span>
-								<span class="text-white">+2348132546664</span>
-							</li>
-							<li>
-								<span>Email:</span>
-								<span class="text-white">okechukwuidam516@gmail.com</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="single-footer">
-						<h6>Follow Me</h6>
-						<p>Keep in Touch</p>
-						<div class="footer-social-icons d-flex align-items-center">
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-linkedin-in"></i></a>
-							<a href="#"><i class="fab fa-skype"></i></a>
-						</div>
-					</div>
-				</div>
-				<p class="footer-text mt-80 mx-auto col-lg-12">Copyright &copy;2019 All rights reserved | Idam Okechukwu Samuel.</p>
-			</div>
-		</div>
-	</footer>
-	<!--================End footer=================-->
-
-	<!--================ Jquery=================-->
-	<script src="script/jquery-3.4.1.min.js"></script>
-
-	<!--================Bootstrap=================-->
-	<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <!--================Bootstrap=================-->
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script src="script/popper.min.js"></script>
-    <script src="script/fontawesome.min.js"></script>
     <script src="script/all.min.js"></script>
-    <script src="script/smooth-scroll.min.js"></script>
-    <script src="scrollUp.min.js"></script>
-    <script src="script/lightbox.min.js"></script>
-    <script src="script/magnific-popup.min.js"></script>
-    <script src="script/ajaxchimp.js"></script>
-    <script src="script/jquery-ui.js"></script>
-
-    <!--================ Counter Plugins=================-->
-    <script src="script/jquery.waypoints.min.js"></script>
-    <script src="script/jquery.counterup.min.js"></script>
-
-    <script src="script/isotope.pkgd.min.js"></script>
-    <script src="script/contact-form.js"></script>
-    <script src="script/modernizr-2.8.3.min.js"></script>
-
-    <!--================Wow=================-->
-    <script src="script/wow.min.js"></script>
-    <script src="script/jquery.flexslider.js"></script>
-
-    <!--================Owl Carousel=================-->
-    <script src="script/owl.carousel.min.js"></script>
-	<script src="script/main.js"></script>
+    <script src="script/main.js"></script>
     <!--================Smooth Scroll=================-->
     <script>
-		var scroll = new SmoothScroll('a[href*="#"]');
-	</script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
-	<!--================ Wow Animation=================-->
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
+    <!--================ Wow Animation=================-->
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
 
-	</script>
+    </script>
 
-	<!--================Owl Carousel=================-->
-	<script type="text/javascript">
-		$('.owl-carousel').owlCarousel({
-		    loop:true,
-		    margin:10,
-		    nav:false,
-		    pagination:false,
-		    autoplay: 1000,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:1
-		        },
-		        1000:{
-		            items:1
-		        }
-		    }
-		})
-	</script>
+    <!--================Owl Carousel=================-->
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            pagination: false,
+            autoplay: 1000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
+
 </html>
